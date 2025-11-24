@@ -1,0 +1,20 @@
+{
+  "name": "talkky-bot",
+  "version": "1.1.7",
+  "description": "SDK para criar bots usando a plataforma Talkky",
+  "main": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "copyfiles -f src/index.js dist && npx javascript-obfuscator dist/index.js --config obfuscator.json --output dist/index.js",
+    "release": "npm run build && npm publish --access public"
+  },
+  "dependencies": {
+    "ws": "^8.0.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}

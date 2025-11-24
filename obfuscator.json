@@ -1,0 +1,25 @@
+{
+  "compact": true,
+  "controlFlowFlattening": false,
+  "deadCodeInjection": false,
+  "stringArray": true,
+  "stringArrayThreshold": 0.75,
+  "splitStrings": false,
+  "renameGlobals": false,
+  "rotateStringArray": true,
+  "shuffleStringArray": true,
+
+  "reservedStrings": [
+    "open",
+    "close",
+    "error",
+    "message",
+    "ready",
+    "event",
+    "send_message",
+    "new_message",
+    "conversation_id",
+    "text",
+    "ping"
+  ]
+}
